@@ -1,0 +1,16 @@
+﻿@model FMArslan.Web.Model.PageConfig
+@using FMArslan.Web.Helper
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+    @Html.PartialViewWithCheck("shared/header.cshtml", @Model)
+</head>
+<body>
+    <div id="page">
+        @Html.PartialViewWithCheck("shared/contentHeader.cshtml", @Model)
+        @Html.PartialViewWithCheck(Model.Page.FilePath, @Model)
+        @Html.PartialViewWithCheck("shared/contentFooter.cshtml", @Model)
+    </div>
+</body>
+</html>

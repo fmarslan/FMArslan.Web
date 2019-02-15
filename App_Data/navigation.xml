@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<navigation>
+  <pages>
+    <page>
+      <title>Main Page</title>
+      <changefreg>weekly</changefreg>
+      <priority>0.3</priority>
+      <path>main.cshtml</path>
+      <key>main</key>
+    </page>
+    <page>
+      <title>Custom Page 1</title>
+      <changefreg>weekly</changefreg>
+      <priority>0.3</priority>
+      <path>page1.cshtml</path>
+      <key>custom-page-1</key>
+      <attributes>
+        <attribute key="trTitle" value="Sayfa 1" />
+        <attribute key="enTitle" value="Page 1" />
+      </attributes>
+    </page>
+    <page>
+      <title>Custom Page 2</title>
+      <changefreg>weekly</changefreg>
+      <priority>0.8</priority>
+      <path>page1.cshtml</path>
+      <key>custom-page-2</key>
+      <attributes>
+        <attribute key="trTitle" value="Sayfa 2" />
+        <attribute key="enTitle" value="Page 2" />
+      </attributes>
+    </page>
+    <page>
+      <title>Full Page</title>
+      <changefreg>weekly</changefreg>
+      <priority>0.8</priority>
+      <path>fullpage.cshtml</path>
+      <key>full-page-template</key>
+      <fullpage>true</fullpage>
+      <attributes>
+        <attribute key="trTitle" value="Tam Sayfa" />
+        <attribute key="enTitle" value="Full Page" />
+      </attributes>
+    </page>
+  </pages>
+</navigation>

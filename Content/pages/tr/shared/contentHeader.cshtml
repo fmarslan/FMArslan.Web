@@ -1,0 +1,14 @@
+﻿@model FMArslan.Web.Model.PageConfig
+<div id="header">
+    <div>
+        <a href="index.html" class="logo"><img src="/Content/images/logo.png" alt=""></a>
+        <ul id="navigation">
+            @foreach (var page in Model.Navigation.Pages)
+                {
+                    <li class='menu @(page.Key ==Model.Page.Key ? "selected":"" )'>
+                        <a href="/tr/@page.Key">@(String.IsNullOrEmpty(page["trTitle"])==false? page["trTitle"] : (String.IsNullOrEmpty(page.Title) == false ? page.Title : page.Key))</a>
+                    </li>
+            }
+        </ul>
+    </div>
+</div>
