@@ -26,3 +26,8 @@ You can easly make a website for you with razor.
     </div>
 </div>
   ```
+
+Reference
+
+[Template 1](https://freewebsitetemplates.com/preview/frozenyogurtshop/index.html)
+[Template 2](https://startbootstrap.com/themes/creative/)
