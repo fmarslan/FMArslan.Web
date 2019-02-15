@@ -30,4 +30,5 @@ You can easly make a website for you with razor.
 Reference
 
 <a href="https://freewebsitetemplates.com/preview/frozenyogurtshop/index.html" target="_blank">Template 1(freewebsitetemplates/frozenyogurtshop)</a>
-<a href="https://startbootstrap.com/themes/creative/" target="_blank">Template 1(startbootstrap)</a>
+
+<a href="https://startbootstrap.com/themes/creative/" target="_blank">Template 2(startbootstrap)</a>
