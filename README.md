@@ -29,5 +29,5 @@ You can easly make a website for you with razor.
 
 Reference
 
-[Template 1](https://freewebsitetemplates.com/preview/frozenyogurtshop/index.html)
-[Template 2](https://startbootstrap.com/themes/creative/)
+[Template 1](https://freewebsitetemplates.com/preview/frozenyogurtshop/index.html){:target="_blank"}
+[Template 2](https://startbootstrap.com/themes/creative/){:target="_blank"}
