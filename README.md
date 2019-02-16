@@ -7,7 +7,8 @@ You can easly make a website for you with razor.
   * You should declare your navigation in App_Data folder.
   * You should add your resource files(css, js, img, font etc) move to Content folder.
   * You can develop your pages in language folders where in Content
-  
+####  <span style="color:red">Important</span>
+ * <span style="color:red">You must save solution file to parent folder</span>
   ### Example
   
   ``` HTML
