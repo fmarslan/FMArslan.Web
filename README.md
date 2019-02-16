@@ -9,7 +9,10 @@ You can easly make a website for you with razor.
   * You can develop your pages in language folders where in Content
 ####  <span style="color:red">Important</span>
  * <span style="color:red">You must save solution file to parent folder</span>
-  ### Example
+
+<a href="https://raw.githubusercontent.com/fmarslan/FMArslan.Web/master/App_Data/navigation.xml" target="_blank"> Navigation XML Sample</a>
+
+### Example
   
   ``` HTML
 @model FMArslan.Web.Model.PageConfig
@@ -34,10 +37,7 @@ You can easly make a website for you with razor.
     <add key="webpages:Version" value="3.0.0.0" />
     <add key="defaultLanguage" value="en" />
     <add key="languages" value="en,tr" />
-    <add key="mainPage" value="main" />
     <add key="errorPage" value="/shared/error.cshtml" /> <!-- in language folder -->
-    <add key="suffix" value="" />
-    <add key="redirectForSuffix" value="false" />
     <add key="webpages:Enabled" value="false" />
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
