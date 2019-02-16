@@ -26,6 +26,33 @@ You can easly make a website for you with razor.
     </div>
 </div>
   ```
+### Config
+
+``` XML
+  <appSettings>
+    <add key="webpages:Version" value="3.0.0.0" />
+    <add key="defaultLanguage" value="en" />
+    <add key="languages" value="en,tr" />
+    <add key="mainPage" value="main" />
+    <add key="errorPage" value="/shared/error.cshtml" /> <!-- in language folder -->
+    <add key="suffix" value="" />
+    <add key="redirectForSuffix" value="false" />
+    <add key="webpages:Enabled" value="false" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+    <add key="contentFolder" value="~/Content" />
+  </appSettings>
+```
+
+### Path
+``` PATH
+ Content
+ |__Pages
+    |__en
+    |  |__ ... {your pages} ...
+    |__tr
+       |__ ... {your pages} ...
+ ```
 
 ### References
 
