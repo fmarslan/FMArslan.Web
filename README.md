@@ -14,7 +14,7 @@ You can easly make a website for you with razor.
 
 ### Example
   
-  ``` HTML
+  ``` RAZOR
 @model FMArslan.Web.Model.PageConfig
 <div id="header">
     <div>
