@@ -3,10 +3,10 @@
     <div>
         <a href="index.html" class="logo"><img src="/Content/images/logo.png" alt=""></a>
         <ul id="navigation">
-            @foreach (var page in Model.Navigation.Pages)
+            @foreach (var page in Model.Navigation.Pages.Where(x=>x.Key.Any(y=>y.Language.Equals(Model.Language))))
                 {
-                    <li class='menu @(page.Key ==Model.Page.Key ? "selected":"" )'>
-                        <a href="/en/@page.Key">@(String.IsNullOrEmpty(page["enTitle"])==false? page["enTitle"] : (String.IsNullOrEmpty(page.Title) == false ? page.Title : page.Key))</a>
+                    <li class='menu @(page.getKey(Model.Language) == Model.Page.getKey(Model.Language) ? "selected":"" )'>
+                        <a href="/en/@page.getKey(Model.Language)">@(String.IsNullOrEmpty(page["enTitle"])==false? page["enTitle"] : (String.IsNullOrEmpty(page.Title) == false ? page.Title : page.getKey(Model.Language)))</a>
                     </li>
             }
         </ul>

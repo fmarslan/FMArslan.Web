@@ -158,6 +158,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App_Data\navigation.xml.bak" />
     <Content Include="App_Data\navigation.xml" />
     <Content Include="Content\fonts\lato-bold-webfont.svg" />
     <Content Include="Content\fonts\lato-regular-webfont.svg" />
@@ -1864,9 +1865,7 @@
     <Content Include="Content\pages\tr\shared\header.cshtml" />
     <None Include="Nlog.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\pages\tr\template\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

@@ -16,13 +16,17 @@ namespace FMArslan.Web.Controllers
             {
                 language = MvcApplication.DefaultLanguage;
             }
-            PageModel page = NavigationHelper.Navigation.Pages.Where(x => x.Key != null && x.Key.Trim().Equals(id)).FirstOrDefault();
+            if (String.IsNullOrEmpty(id))
+                id = MvcApplication.MainPage.getKey(language);
+
+            PageModel page = NavigationHelper.Navigation.Pages.Where(x => x.Key != null && x.Key.Any(y=>y.Language!=null && y.Language.Equals(language) && y.Key.Trim().Equals(id))).FirstOrDefault();
             if (page == null)
             {
                 page = new PageModel();
                 page.FilePath = MvcApplication.ErrorPage;
-                page.Key = "error";
+                page.Key = new List<PageKey>();
                 page.Title = "Error";
+                page.Key.Add(new PageKey() { Key = "error", Language = language });
             }
             if (page.FullPage)
                 return View(CustomHtmlHelper.GetPath(ContentType.PAGES, language + "/" + page.FilePath), new PageConfig(page, language, id));

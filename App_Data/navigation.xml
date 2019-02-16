@@ -5,15 +5,26 @@
       <title>Main Page</title>
       <changefreg>weekly</changefreg>
       <priority>0.3</priority>
+      <fullpage>false</fullpage>
       <path>main.cshtml</path>
-      <key>main</key>
+      <mainPage>true</mainPage>
+      <keys>
+        <key lang="en" key="main" />
+        <key lang="tr" key="anasayfa" />
+      </keys>
+      <attributes p4:nil="true" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance" />
     </page>
     <page>
       <title>Custom Page 1</title>
       <changefreg>weekly</changefreg>
       <priority>0.3</priority>
+      <fullpage>false</fullpage>
       <path>page1.cshtml</path>
-      <key>custom-page-1</key>
+      <mainPage>false</mainPage>
+      <keys>
+        <key lang="en" key="custom-page-1" />
+        <key lang="tr" key="ozel-sayfa-1" />
+      </keys>
       <attributes>
         <attribute key="trTitle" value="Sayfa 1" />
         <attribute key="enTitle" value="Page 1" />
@@ -23,8 +34,12 @@
       <title>Custom Page 2</title>
       <changefreg>weekly</changefreg>
       <priority>0.8</priority>
+      <fullpage>false</fullpage>
       <path>page1.cshtml</path>
-      <key>custom-page-2</key>
+      <mainPage>false</mainPage>
+      <keys>
+        <key lang="en" key="custom-page-2" />
+      </keys>
       <attributes>
         <attribute key="trTitle" value="Sayfa 2" />
         <attribute key="enTitle" value="Page 2" />
@@ -34,9 +49,13 @@
       <title>Full Page</title>
       <changefreg>weekly</changefreg>
       <priority>0.8</priority>
-      <path>fullpage.cshtml</path>
-      <key>full-page-template</key>
       <fullpage>true</fullpage>
+      <path>fullpage.cshtml</path>
+      <mainPage>false</mainPage>
+      <keys>
+        <key lang="en" key="cfull-page-template" />
+        <key lang="tr" key="tam-sayfa-tema" />
+      </keys>
       <attributes>
         <attribute key="trTitle" value="Tam Sayfa" />
         <attribute key="enTitle" value="Full Page" />

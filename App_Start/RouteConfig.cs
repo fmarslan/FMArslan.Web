@@ -24,7 +24,7 @@ namespace FMArslan.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{language}/{*id}",
-                defaults: new { controller = "Home", action = "Index", language = MvcApplication.DefaultLanguage, id = MvcApplication.MainPage }
+                defaults: new { controller = "Home", action = "Index", language = MvcApplication.DefaultLanguage, id = UrlParameter.Optional }
             );
             var constraintsResolver = new DefaultInlineConstraintResolver();
 
