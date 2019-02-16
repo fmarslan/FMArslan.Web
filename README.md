@@ -1,5 +1,5 @@
 # FMArslan.Web
-Simple Multi Language Web Framework on .Net Framework
+Simple Multi Language Web Framework on .Net Framework 4.7.1
 
 You can easly make a website for you with razor. 
 
