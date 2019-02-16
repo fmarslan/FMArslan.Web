@@ -10,7 +10,7 @@ You can easly make a website for you with razor.
 ####  <span style="color:red">Important</span>
  * <span style="color:red">You must save solution file to parent folder</span>
 
-<a href="https://raw.githubusercontent.com/fmarslan/FMArslan.Web/master/App_Data/navigation.xml" target="_blank"> Navigation XML Sample</a>
+<a href="https://raw.githubusercontent.com/fmarslan/FMArslan.Web/master/App_Data/navigation.xml" target="_blank">Navigation XML Sample</a>
 
 ### Example
   
